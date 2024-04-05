@@ -24,12 +24,12 @@
 
   const client = axios.create({
   // 環境変数に変更
-  baseURL: 'https://api.github.com/repos/Marcrot/Refactorizzacion_Css',
+  baseURL: `${process.env.VUE_APP_GITHUB_ENDPOINT}`,
   headers: {
     'Accept': 'application/vnd.github.v3+json',
     'Content-Type':'application/json',
     // 環境変数に変更
-    //'Authorization': `token ${process.env.VUE_APP_GITHUB_TOKEN}`
+    'Authorization': `token ${process.env.VUE_APP_GITHUB_TOKEN}`
   },
 })
   
