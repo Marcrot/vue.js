@@ -22,9 +22,9 @@
   import TodoItem from '@/components/TodoItem.vue';
   
   const client = axios.create({
-    baseURL: `${process.env.VUE_APP_GITHUB_ENDPOINT}`,
+    baseURL: 'https://api.github.com/repos/Marcrot/Refactorizzacion_Css',
     headers: {
-      // 'Authorization': `token ${process.env.VUE_APP_GITHUB_TOKEN}`,
+      //'Authorization': `token ${process.env.VUE_APP_GITHUB_TOKEN}`,
       'Accept': 'application/vnd.github.v3+json',
       'Content-Type':'application/json',
     },
